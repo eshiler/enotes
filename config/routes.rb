@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  mount Bootsy::Engine => '/bootsy', as: 'bootsy'
   root 'welcome#index'
   get 'sign_up' => 'users#new'
   resources :users, only: :create

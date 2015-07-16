@@ -34,6 +34,8 @@ gem 'haml'
 
 gem 'font-awesome-sass'
 
+gem 'bootsy'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
