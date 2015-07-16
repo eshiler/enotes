@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   get 'login' => 'sessions#new'
 
+  resources :notes, except: :edit
+
   # ESH: Left all this stuff from the RAILS install
 
   # The priority is based upon order of creation: first created -> highest priority.
