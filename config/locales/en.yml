@@ -2,5 +2,12 @@ en:
   user:
     flash:
       create:
-        success: "Thanks for signing up for Enotes!"
+        success: "Thanks for signing up!"
         failure: "There was a problem with your registration."
+  session:
+    flash:
+      create:
+        success: "Welcome!"
+        failure: "There was a problem logging in with those credentials."
+      destroy:
+        success: "See you real soon. /mickey mouse voice"

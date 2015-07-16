@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   get 'sign_up' => 'users#new'
   resources :users, only: :create
 
+  resources :sessions, only: :create
+  delete 'logout' => 'sessions#destroy'
+  get 'login' => 'sessions#new'
+
   # ESH: Left all this stuff from the RAILS install
 
   # The priority is based upon order of creation: first created -> highest priority.
