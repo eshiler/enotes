@@ -11,6 +11,12 @@ Rails.application.routes.draw do
 
   resources :notes, except: :edit
 
+  namespace :api do
+    namespace :v1 do
+      resources :notes, except: [:new, :edit]
+    end
+  end
+
   # ESH: Left all this stuff from the RAILS install
 
   # The priority is based upon order of creation: first created -> highest priority.
